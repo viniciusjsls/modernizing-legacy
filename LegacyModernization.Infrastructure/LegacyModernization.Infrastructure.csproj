@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LegacyModernization.Core\LegacyModernization.Core.csproj" />
+    <ProjectReference Include="..\LegacyModernization.Presentation\LegacyModernization.Application\LegacyModernization.Application.csproj" />
+  </ItemGroup>
+
+</Project>

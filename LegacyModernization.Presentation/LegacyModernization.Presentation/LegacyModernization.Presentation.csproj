@@ -17,4 +17,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\LegacyModernization.Core\LegacyModernization.Core.csproj" />
+    <ProjectReference Include="..\..\LegacyModernization.Infrastructure\LegacyModernization.Infrastructure.csproj" />
+    <ProjectReference Include="..\LegacyModernization.Application\LegacyModernization.Application.csproj" />
+  </ItemGroup>
+
 </Project>
