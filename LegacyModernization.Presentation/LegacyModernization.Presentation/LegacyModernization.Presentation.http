@@ -1,0 +1,6 @@
+@LegacyModernization.Presentation_HostAddress = http://localhost:5087
+
+GET {{LegacyModernization.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
