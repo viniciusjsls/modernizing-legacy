@@ -27,3 +27,9 @@ The development of the APIs would follow the same patterns and implement:
 - In terms of code quality, we would start project development with Sonar and code quality metrics (i.e., code coverage) in place to guarantee that the project achieves its goals from day one. We would also ensure that a CI/CD process is in place, using Git for version control and pull request (PR) review.
 
 Last but not least, the decision on how to host these services would come from a cost evaluation. This would allow us to define whether it would be better to use containers and orchestrators such as Kubernetes or to use a Serverless approach.
+
+**Documentation:**
+
+The premise I considered when preparing the responses is that a project's complexity would be proportional, thus requiring the use of these resources. In another context, some resources could be replaced or eliminated.
+
+To consider the modernization a success, it will be necessary to evaluate it using metrics. These metrics can incorporate various factors such as execution time, volume of data processed, user experience, increased productivity, improved monitoring, and reduced time for maintenance and improvement activities, among others.
