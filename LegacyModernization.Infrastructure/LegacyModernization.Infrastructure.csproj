@@ -7,8 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LegacyModernization.Application\LegacyModernization.Application.csproj" />
     <ProjectReference Include="..\LegacyModernization.Core\LegacyModernization.Core.csproj" />
-    <ProjectReference Include="..\LegacyModernization.Presentation\LegacyModernization.Application\LegacyModernization.Application.csproj" />
   </ItemGroup>
 
 </Project>
