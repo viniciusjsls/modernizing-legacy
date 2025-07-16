@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\LegacyModernization.Core\LegacyModernization.Core.csproj" />
+    <ProjectReference Include="..\LegacyModernization.Core\LegacyModernization.Core.csproj" />
   </ItemGroup>
 
 </Project>
