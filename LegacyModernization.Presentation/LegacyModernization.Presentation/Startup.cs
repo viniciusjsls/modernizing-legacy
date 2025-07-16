@@ -1,4 +1,7 @@
-﻿namespace LegacyModernization.Presentation
+﻿using LegacyModernization.Presentation.Data;
+using Microsoft.EntityFrameworkCore;
+
+namespace LegacyModernization.Presentation
 {
     public class Startup
     {
@@ -14,6 +17,8 @@
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+            services.AddDbContext<AppDbContext>(options
+             => options.UseSqlServer());
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
