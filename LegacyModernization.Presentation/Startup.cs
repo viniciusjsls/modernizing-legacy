@@ -1,4 +1,9 @@
-﻿using LegacyModernization.Presentation.Data;
+﻿using LegacyModernization.Application.Abstractions.Repositories;
+using LegacyModernization.Application.Abstractions.Services;
+using LegacyModernization.Application.Services;
+using LegacyModernization.Application.UseCases.CreateOrder;
+using LegacyModernization.Infrastructure.Data;
+using LegacyModernization.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace LegacyModernization.Presentation
@@ -19,6 +24,13 @@ namespace LegacyModernization.Presentation
             services.AddSwaggerGen();
             services.AddDbContext<AppDbContext>(options
              => options.UseSqlServer());
+            services.AddScoped<IBaseRepository, BaseRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IOrderService, OrderService>();
+            services.AddMediatR(cfg =>
+            {
+                cfg.RegisterServicesFromAssembly(typeof(CreateOrderCommand).Assembly);
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
