@@ -4,6 +4,6 @@ namespace LegacyModernization.Application.Abstractions.Services
 {
     public interface IOrderService
     {
-        Task Create(IEnumerable<OrderItem> items);
+        Task<Order> Create(IEnumerable<OrderItem> items);
     }
 }

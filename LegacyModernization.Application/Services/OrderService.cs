@@ -6,7 +6,7 @@ namespace LegacyModernization.Application.Services
 {
     public class OrderService(IOrderRepository repository) : IOrderService
     {
-        public async Task Create(IEnumerable<OrderItem> items)
+        public async Task<Order> Create(IEnumerable<OrderItem> items)
         {
             var order = new Order();
             var domainValidation = order.AddItems(items);
@@ -20,6 +20,8 @@ namespace LegacyModernization.Application.Services
             repository.Add(order);
 
             await repository.SaveChangesAsync();
+
+            return order;
         }
     }
 }
