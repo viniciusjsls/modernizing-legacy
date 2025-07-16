@@ -1,4 +1,4 @@
-﻿namespace LegacyModernization.Presentation.Domain
+﻿namespace LegacyModernization.Core.Domain
 {
     public class OrderItem
     {
