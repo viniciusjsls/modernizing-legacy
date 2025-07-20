@@ -29,10 +29,6 @@ public class GetOrderQueryHandler(IOrderRepository orderRepository) : IRequestHa
         if (order == null)
             throw new KeyNotFoundException();
 
-        // it could have additional logic here, for example a notification service
-        // or publishing the order to a topic to notify other microservices
-        // await additionalService.Publish(order);
-
         return new GetOrderQueryResponse(order);
     }
 }
